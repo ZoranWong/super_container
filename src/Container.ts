@@ -9,7 +9,11 @@ export default class Container {
         this.aliasMap = new Map();
     }
 
-    public isEmpty (): number {
+    public isEmpty (): boolean {
+        return this.instances.size === 0;
+    }
+
+    public size (): number {
         return this.instances.size;
     }
 

@@ -1,7 +1,6 @@
 import Application from "../src/Application";
 import { expect } from 'chai';
 import 'mocha';
-import Container from "../src/Container";
 import ApplicationProxyHandler from "../src/ApplicationProxyHandler";
 
 describe('Test Application ApplicationProxyHandler', () => {
@@ -11,6 +10,6 @@ describe('Test Application ApplicationProxyHandler', () => {
         proxy.instance('a', {a: 1111});
         proxy.alias('a', 'ab')
         proxy.b = 1;
-        console.log(proxy.ab, proxy.a, proxy.b);
+        console.log(proxy.ab, proxy.a, proxy.b, proxy.isEmpty());
     });
 });
