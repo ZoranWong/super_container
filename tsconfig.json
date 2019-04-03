@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "allowJs": true,
+        "target": "es6",
+        "module": "commonJS",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "baseUrl": "types",
+        "typeRoots": ["types"],
+        "sourceMap": true
+    },
+    "exclude": [
+        "/node_modules",
+        "/test/*.ts"
+    ]
+}
