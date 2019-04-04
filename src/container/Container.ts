@@ -8,7 +8,7 @@ export default class Container {
     protected abstractAliases: Map<string, string[]> = null;
     protected extenders: Map<string, any> = null;
     protected tags: Map<string, any> = null;
-    protected buildStack: Set<any> = null;
+    protected buildStack: any[] = null;
     protected with: Set<any> = null;
     protected contextual: Map<string, any> = null;
     protected reboundCallbacks: Map<string, any> = null;
@@ -121,6 +121,7 @@ export default class Container {
                             return concrete.constructor.apply(this, args);
                         }
                     }
+
                     F.prototype = concrete.constructor.prototype;
                     return new F(parameters);
                 })();
@@ -172,20 +173,19 @@ export default class Container {
     }
 
     public make (abstract: string, parameters: any = []): any {
-        let result: string = this.getAlias(abstract) || abstract;
-        let concrete = this.instances.get(result);
-        if (_.isFunction(concrete)) {
-            return concrete.call(this);
-        } else if (_.isObject(concrete)) {
-            if (concrete.shared) {
-                return concrete.instance;
-            } else {
-                return _.clone(concrete);
-            }
-        } else {
-            return concrete;
-        }
-        return null;
+        return this.resolve(abstract, parameters);
+    }
+
+    protected findInContextualBindings(abstract: string) {
+        let result = this.buildStack.length;
+    }
+
+    protected getContextualConcrete(abstract: string) {
+
+    }
+    protected resolve (abstract: string, parameters: any = []): any {
+        let abs = this.getAlias(abstract);
+        let needsContextualBuild = !_.isEmpty(parameters) || !_.isNull(this.getContextualConcrete(abstract))
     }
 
     public keys (): string[] {
