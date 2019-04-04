@@ -1,10 +1,8 @@
 import ServiceProvider from './contracts/ServiceProviderInterface';
 import CommandInterface from './contracts/CommandInterface';
-import Container from "./Container";
+import Container from "./container/Container";
 import FrameworkInstanceAdapter from "./contracts/FrameworkInstanceAdapterInterface";
 import EventListenerInterface from "./contracts/EventListenerInterface";
-import * as  _ from 'underscore';
-import ApplicationProxyHandler from "./ApplicationProxyHandler";
 
 export default class Application extends Container {
     public static version = '0.0.1';

@@ -1,7 +1,7 @@
 import Application from "../src/Application";
 import { expect } from 'chai';
 import 'mocha';
-import Container from "../src/Container";
+import Container from "../src/container/Container";
 
 describe('New Application', () => {
     it('should return true', () => {
