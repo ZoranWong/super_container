@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/container/Container.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="179" column="43" selection-start-line="179" selection-start-column="43" selection-end-line="179" selection-end-column="43" />
+            <state relative-caret-position="557">
+              <caret line="192" column="5" lean-forward="true" selection-start-line="192" selection-start-column="5" selection-end-line="192" selection-end-column="5" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -212,8 +212,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="308" />
-    <option name="y" value="433" />
+    <option name="x" value="120" />
+    <option name="y" value="23" />
     <option name="width" value="2343" />
     <option name="height" value="976" />
   </component>
@@ -300,18 +300,17 @@
       <updated>1541840490256</updated>
       <workItem from="1541840491456" duration="4856000" />
       <workItem from="1553823809359" duration="11767000" />
-      <workItem from="1554100038179" duration="47749000" />
+      <workItem from="1554100038179" duration="48472000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64372000" />
+    <option name="totallyTimeSpent" value="65095000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="308" y="433" width="2343" height="976" extended-state="0" />
-    <editor active="true" />
+    <frame x="120" y="23" width="2343" height="976" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16558018" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16558018" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -323,7 +322,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49804434" visible="true" weight="0.122171946" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49804434" visible="true" weight="0.122171946" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5019557" side_tool="true" visible="true" weight="0.122171946" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -638,8 +637,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/container/Container.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="179" column="43" selection-start-line="179" selection-start-column="43" selection-end-line="179" selection-end-column="43" />
+        <state relative-caret-position="557">
+          <caret line="192" column="5" lean-forward="true" selection-start-line="192" selection-start-column="5" selection-end-line="192" selection-end-column="5" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
