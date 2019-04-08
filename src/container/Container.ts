@@ -1,5 +1,5 @@
 import * as _ from 'underscore';
-import {Closure} from "../utils/helper";
+import {Closure, isClosure} from "../utils/helper";
 import ContextualBindingBuilder from "./ContextualBindingBuilder";
 
 export default class Container {
@@ -11,7 +11,7 @@ export default class Container {
     protected buildStack: any[] = null;
     protected with: Set<any> = null;
     protected contextual: Map<string, any> = null;
-    protected reboundCallbacks: Map<string, any> = null;
+    protected reboundCallbacks: Map<string, Set<Closure>> = null;
     protected bindings: Map<string, any> = null;
 
     /**
@@ -47,6 +47,10 @@ export default class Container {
     public constructor () {
         this.instances = new Map();
         this.aliases = new Map();
+        this.bindings = new Map();
+        this.resolved = new Set<string>();
+        this.with = new Set<any>();
+        this.reboundCallbacks = new Map<string, Set<Closure>>();
     }
 
     /**
@@ -59,20 +63,21 @@ export default class Container {
         return new ContextualBindingBuilder(this, this.getAlias(concrete));
     }
 
-    public bound (abstract: string): boolean {
-        return this.bindings.get(abstract) ||
-            this.instances.get(abstract) ||
-            this.isAlias(abstract);
+    public bound (abstractName: string): boolean {
+        return this.bindings.get(abstractName) ||
+            this.instances.get(abstractName) ||
+            this.isAlias(abstractName);
     }
 
-    public isShared (abstract: string): boolean {
+    public isShared (abstractName: string): boolean {
         let bind = null;
-        return this.instances.get(abstract) ||
-            ((bind = this.bindings.get(abstract)) && !!bind['shared']);
+        return this.instances.get(abstractName) ||
+            ((bind = this.bindings.get(abstractName))
+                && !!bind['shared']);
     }
 
-    public isAlias (abstract: string): boolean {
-        return !!this.aliases.get(abstract);
+    public isAlias (abstractName: string): boolean {
+        return !!this.aliases.get(abstractName);
     }
 
     public isEmpty (): boolean {
@@ -83,109 +88,146 @@ export default class Container {
         return this.instances.size;
     }
 
-    public alias (abstract: string, alias: string) {
-        this.aliases.set(alias, abstract);
-        let set: string[] = this.abstractAliases.get(abstract) || [];
+    public alias (abstractName: string, alias: string) {
+        this.aliases.set(alias, abstractName);
+        let set: string[] = this.abstractAliases.get(abstractName) || [];
         set.push(alias)
-        this.abstractAliases.set(abstract, set);
+        this.abstractAliases.set(abstractName, set);
     }
 
-    public addContextualBinding (concrete: string, abstract: string, implementation: string | Closure) {
+    public addContextualBinding (concrete: string, abstractName: string, implementation: string | Closure) {
         let tmp: Map<string, string | Closure> = this.contextual.get(concrete) || new Map();
-        tmp.set(this.getAlias(abstract), implementation);
+        tmp.set(this.getAlias(abstractName), implementation);
         this.contextual.set(concrete, tmp);
     }
 
-    public getAlias (abstract: string): string | null {
-        let result = this.aliases.get(abstract);
-        if (result) {
-            return result;
+    public getAlias (abstractName: string): string | null {
+        console.log(abstractName);
+        let result = this.aliases.get(abstractName);
+        if (!result) {
+            return abstractName;
         }
-        if (result === abstract) {
-            throw  `[${abstract}] is aliased to itself!`
+        if (result === abstractName) {
+            throw  `[${abstractName}] is aliased to itself!`
         }
         return this.getAlias(result);
     }
 
-    protected dropStaleInstances (abstract: string) {
-        this.instances.delete(abstract);
-        this.aliases.delete(abstract);
+    protected dropStaleInstances (abstractName: string) {
+        this.instances.delete(abstractName);
+        this.aliases.delete(abstractName);
     }
 
-    public getClosure (abstract: string, concrete: any): Closure {
+    public getClosure (abstractName: string, concrete: any): Closure {
         return (container: Container, parameters: any[] = []): any => {
             if (_.isObject(concrete) && !_.isFunction(concrete)) {
-                return ((): any => {
-                    class F {
-                        constructor (args: any[]) {
-                            return concrete.constructor.apply(this, args);
-                        }
-                    }
-
-                    F.prototype = concrete.constructor.prototype;
-                    return new F(parameters);
-                })();
+                return concrete;
             }
-            return container.make(abstract, parameters);
+            return container.make(abstractName, parameters);
         }
     }
 
-    public bind (abstract: string, concrete: Closure | object | null = null, shared = false) {
-        this.dropStaleInstances(abstract);
+    public bind (abstractName: string, concrete: Closure | object | null = null, shared = false) {
+        this.dropStaleInstances(abstractName);
 
         if (!(concrete instanceof Function)) {
-            concrete = this.getClosure(abstract, concrete);
+            concrete = this.getClosure(abstractName, concrete);
         }
-        this.bindings.set(abstract, {
+        this.bindings.set(abstractName, {
             concrete: concrete,
             shared: shared
         });
-        if (!this.isResolved(abstract)) {
-            this.rebound(abstract);
+        if (!this.isResolved(abstractName)) {
+            this.rebound(abstractName);
         }
         return concrete;
     }
 
-    protected rebound (abstract: string) {
-        let instance = this.make(abstract);
-        let callbacks: Closure[] = this.getReboundCallbacks(abstract);
+    protected rebound (abstractName: string) {
+        let instance = this.make(abstractName);
+        let callbacks: Set<Closure> = this.getReboundCallbacks(abstractName);
         callbacks.forEach((callback) => {
             callback.call(this, instance);
         });
     }
 
-    protected getReboundCallbacks (abstract: string): Closure[] {
-        let callbacks: Closure[] = this.reboundCallbacks.get(abstract);
+    protected getReboundCallbacks (abstractName: string): Set<Closure> {
+        let callbacks: Set<Closure> = this.reboundCallbacks.get(abstractName);
         if (callbacks) {
             return callbacks;
         }
-        return [];
+        return new Set<Closure>();
+    }
+
+    public rebinding (abstractName: string, callback: Closure) {
+        let callbacks: Set<Closure> = this.reboundCallbacks.get(abstractName) || new Set<Closure>();
+        callbacks.add(callback);
+        this.reboundCallbacks.set(abstractName, callbacks);
+        if (this.bound(abstractName)) {
+            return this.make(abstractName);
+        }
     }
 
 
-    public isResolved (abstract: string): boolean {
-        let result = abstract;
-        if (this.isAlias(abstract)) {
-            result = this.getAlias(abstract);
+    public isResolved (abstractName: string): boolean {
+        if (this.isAlias(abstractName)) {
+            abstractName = this.getAlias(abstractName);
         }
 
-        return this.resolved.has(result) || this.instances.get(result);
+        return this.resolved.has(abstractName) || this.instances.get(abstractName);
     }
 
-    public make (abstract: string, parameters: any = []): any {
-        return this.resolve(abstract, parameters);
+    public make (abstractName: string, parameters: any = []): any {
+        return this.resolve(abstractName, parameters);
     }
 
-    protected findInContextualBindings(abstract: string) {
+    protected findInContextualBindings (abstractName: string) {
         let result = this.buildStack.length;
     }
 
-    protected getContextualConcrete(abstract: string) {
+    protected getContextualConcrete (abstractName: string) {
 
     }
-    protected resolve (abstract: string, parameters: any = []): any {
-        let abs = this.getAlias(abstract);
-        let needsContextualBuild = !_.isEmpty(parameters) || !_.isNull(this.getContextualConcrete(abstract))
+
+    protected resolve (abstractName: string, parameters: any = []): any {
+        abstractName = this.getAlias(abstractName);
+        let needsContextualBuild = !_.isEmpty(parameters) || !_.isNull(this.getContextualConcrete(abstractName));
+        if (this.instances.get(abstractName) && !needsContextualBuild) {
+            return this.instances.get(abstractName);
+        }
+
+        this.with.add(parameters);
+
+        let concrete = this.getConcrete(abstractName);
+        if (this.isBuildable(concrete)) {
+            return this.build(concrete);
+        } else {
+            return this.make(abstractName, parameters);
+        }
+    }
+
+    public build (concrete: any): any {
+        if (concrete) {
+            console.log('build function', concrete);
+            return concrete;
+        }
+    }
+
+    protected isBuildable (concrete: any): boolean {
+        return isClosure(concrete) || !!concrete.constructor;
+    }
+
+    protected getConcrete (abstractName: string): any {
+        let concrete: any = this.getContextualConcrete(abstractName);
+        if (_.isNull(concrete)) {
+            return concrete;
+        }
+        let binding: any = this.bindings.get(abstractName);
+        if (binding) {
+            return binding['concrete'];
+        }
+
+        return abstractName;
     }
 
     public keys (): string[] {

@@ -8,8 +8,8 @@ describe('Test Application ApplicationProxyHandler', () => {
         let app = new Application();
         let proxy = new Proxy(app, new ApplicationProxyHandler(app))
         proxy.instance('a', {a: 1111});
-        proxy.alias('a', 'ab')
-        proxy.b = 1;
-        console.log(proxy.ab, proxy.a, proxy.b, proxy.isEmpty());
+        // proxy.alias('a', 'ab')
+        // proxy.b = 1;
+        console.log(proxy.a);
     });
 });
