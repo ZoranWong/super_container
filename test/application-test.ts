@@ -5,7 +5,7 @@ import Container from "../src/container/Container";
 
 describe('New Application', () => {
     it('should return true', () => {
-        let app = new Application();
+        let app = Application.getInstance();
         expect(app).to.instanceOf(Container);
     });
 });
