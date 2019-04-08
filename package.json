@@ -2,10 +2,11 @@
     "name": "super",
     "version": "0.0.1",
     "description": "super framework is base on vue ,let u make web/app easier.",
-    "main": "index.js",
+    "main": "lib/src/index.js",
     "scripts": {
         "test": "./node_modules/.bin/mocha -r ./node_modules/ts-node/register test/*.ts",
-        "serve": "vue-cli-service serve --open"
+        "serve": "vue-cli-service serve --open",
+        "build": "rm -rf lib && tsc"
     },
     "keywords": [
         "super",

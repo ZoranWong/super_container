@@ -1,0 +1,1 @@
+{"version":3,"file":"Dispatcher.js","sourceRoot":"","sources":["../../../src/events/Dispatcher.ts"],"names":[],"mappings":";;AAEA,MAAqB,UAAU;IAE3B;QADA,eAAU,GAAQ,IAAI,CAAC;QAEnB,IAAI,CAAC,UAAU,CAAE;IACrB,CAAC;IAED,QAAQ,CAAE,KAAkB;IAC5B,CAAC;IAED,WAAW,CAAE,KAAa,EAAE,QAAkB;IAC9C,CAAC;IAED,cAAc,CAAE,KAAa;IAC7B,CAAC;CACJ;AAdD,6BAcC"}

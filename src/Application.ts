@@ -31,11 +31,6 @@ export default class Application extends Container {
         return this.commandPrefix + name;
     }
 
-    public instance (name: string, instance: any): any {
-        this.bind(name, instance);
-        return instance;
-    }
-
     /**
      * @param serviceProvider
      * */
@@ -47,16 +42,12 @@ export default class Application extends Container {
     /*
     * @param command
     * */
-    public registerCommand (command: CommandInterface): void {
+    public registerCommand (command: any): void {
+        command = new command(this);
         this.singleton(this.commandName(command.commandName()), function () {
             return command;
         });
     }
-
-    public singleton (name: string, concrete: Function): void {
-        this.bind(name, concrete, true);
-    }
-
     public pageChange (route: string) {
         this.showingPageObject = this.make(this.pageKey(route));
     }

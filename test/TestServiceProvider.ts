@@ -13,6 +13,9 @@ export default class TestServiceProvider implements ServiceProviderInterface {
     }
 
     register (): void {
-        this.app.registerCommand(new TestCommand());
+        this.app.registerCommand(TestCommand);
+        this.app.singleton('dd', function () {
+            return new TestCommand;
+        });
     }
 }

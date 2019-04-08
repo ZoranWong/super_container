@@ -6,10 +6,17 @@ import ApplicationProxyHandler from "../src/ApplicationProxyHandler";
 describe('Test Application ApplicationProxyHandler', () => {
     it('should return true', () => {
         let app = new Application();
-        let proxy = new Proxy(app, new ApplicationProxyHandler(app))
-        proxy.instance('a', {a: 1111});
-        // proxy.alias('a', 'ab')
-        // proxy.b = 1;
-        console.log(proxy.a);
+        let proxy = new Proxy(app, new ApplicationProxyHandler(app));
+        let instance = {a: 1111};
+        proxy.resolving('b', () => {
+            console.log('now begin to create a instance');
+        })
+        proxy.afterResolving('b', function () {
+            console.log('builded a instance');
+        })
+        proxy.instance('a', instance);
+        proxy.singleton('b', instance);
+
+        console.log('test get from proxy',  proxy.b);
     });
 });
