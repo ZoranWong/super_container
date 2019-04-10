@@ -84,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/src/adapters/VueRouterAdapter.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#0#73#0" expanded="true" />
               </folding>
@@ -352,11 +352,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95970000" />
+    <option name="totallyTimeSpent" value="96086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="105" y="23" width="2343" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1627907" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -669,7 +668,7 @@
     <entry file="file://$PROJECT_DIR$/src/adapters/VueRouterAdapter.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#0#73#0" expanded="true" />
           </folding>
