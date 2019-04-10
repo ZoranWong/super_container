@@ -85,10 +85,9 @@ export default class Container implements ContainerContract {
     }
 
     public isShared (abstractName: string): boolean {
-        let bind = null;
+        let bind = this.bindings.get(abstractName);
         return this.instances.get(abstractName) ||
-            ((bind = this.bindings.get(abstractName))
-                && !!bind['shared']);
+            (bind && !!bind['shared']);
     }
 
     public isAlias (abstractName: string): boolean {
