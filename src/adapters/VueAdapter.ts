@@ -1,15 +1,25 @@
 import AdapterInterface from '../contracts/FrameworkInstanceAdapterInterface';
-import {Vue} from "vue/types/vue";
-
+import Vue from "vue";
+import Container from '../contracts/Container';
+import * as _ from 'underscore';
 export default class VueAdapter implements AdapterInterface {
     protected vue: Vue = null;
     protected options: object = null;
-    public constructor (options: object = {}) {
+    private app: Container = null;
+    private id: string = '#id';
+    public constructor (app: Container, id: string  = 'id', options: object = {}) {
+        this.app = app;
         this.options = options;
+        this.id = `#${id}`;
     }
 
     public mount (): void {
-        this.vue = new Vue(this.options);
+        let options = {
+            el: this.id,
+            router: this.app.get('router')
+        };
+        options = _.extend(options, this.options);
+        this.vue = new Vue(options);
         this.vue.$mount();
     }
 

@@ -2,14 +2,16 @@
     "compilerOptions": {
         "outDir": "lib",
         "allowJs": true,
-        "target": "es2015",
-        "module": "commonjs",
+        "target": "es6",
+        "module": "commonJS",
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
         "baseUrl": "types",
         "typeRoots": ["types"],
-        "sourceMap": true
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true
     },
     "exclude": [
         "/node_modules",
