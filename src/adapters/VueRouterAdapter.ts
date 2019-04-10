@@ -1,16 +1,30 @@
 import RouterAdapterInterface from "../contracts/RouterAdapterInterface";
-import VueRouter from 'vue-router';
+import VueRouter, {RouteConfig, RouterOptions} from 'vue-router';
 
 export default class VueRouterAdapter implements RouterAdapterInterface {
     private router: VueRouter = null;
-    private routes: object[] = [];
+    private options: RouterOptions = {};
+    private routes: RouteConfig[] = [];
+    private routeStack: any[] = [];
+
     public constructor () {
 
     }
 
     public push (): void {
-    }
-    public load() {
 
+    }
+
+    public replace () {
+
+    }
+
+    public load () {
+        this.router = new VueRouter(this.options);
+    }
+
+    public addRoute (route: string, config: RouteConfig): void {
+        config.name = route;
+        this.routes.push(config);
     }
 }
