@@ -1,6 +1,5 @@
 import AdapterInterface from '../contracts/FrameworkInstanceAdapterInterface';
 import Vue from "vue";
-import Container from '../contracts/Container';
 import * as _ from 'underscore';
 import Application from "../Application";
 
@@ -37,10 +36,20 @@ export default class VueAdapter implements AdapterInterface {
         Vue.mixin({
             methods: {
                 $command: (name, ...parameters: any): any => {
-                    console.log(name, parameters);
-                    return this.app.command(name, parameters);
+                    let params = [name].concat(parameters);
+                    return this.app.command.apply(this.app, params);
                 }
             }
+        });
+        this.app.getInstances().forEach(function (value: any, prop: string) {
+            Object.defineProperty(Vue.prototype, prop, {
+                get (): any {
+                    return value;
+                },
+                set (v: any): void {
+                    return value = v;
+                }
+            })
         });
         this.vue = new Vue(options);
         this.vue.$mount(this.id);

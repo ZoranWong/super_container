@@ -13,4 +13,4 @@ const main = new Proxy(app, new ApplicationProxyHandler(app));
 // const main = new Application('app', App);
 main.register(TestServiceProvider);
 main.run();
-main.command('TEST_COMMAND', 'test super container command')
+// main.command('TEST_COMMAND', 'test super container command')

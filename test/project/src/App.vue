@@ -28,7 +28,7 @@ export default {
     }
   },
   created() {
-    console.log('created test app for vue', this, this.$command('TEST_COMMAND', 'You have get the container command point'));
+    console.log('created test app for vue', this.dd, this.$command('TEST_COMMAND', 'You have get the container command point'));
   }
 }
 </script>
