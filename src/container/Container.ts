@@ -98,6 +98,10 @@ export default class Container implements ContainerContract {
         return this.instances.size === 0;
     }
 
+    public getInstances (): Map<string, any> {
+        return this.instances;
+    }
+
     public size (): number {
         return this.instances.size;
     }
@@ -303,7 +307,8 @@ export default class Container implements ContainerContract {
 
     protected getCallbacksForType (abstractName: string, obj: object, callbacksPerType: Map<string, Set<Closure>>): Set<Closure> {
         let results: Set<Closure> = new Set<Closure>();
-        let callbacks = callbacksPerType.get(abstractName)||new Set<Closure>();;
+        let callbacks = callbacksPerType.get(abstractName) || new Set<Closure>();
+        ;
         callbacks.forEach((callback: Closure) => {
             results.add(callback);
         });

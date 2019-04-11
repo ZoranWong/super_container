@@ -13,7 +13,14 @@ export default class ApplicationProxyHandler {
     }
 
     public set (target: any, prop: string, value: any, receiver: any) {
-        return this.target.instance(prop, value);
+        let tmp = {};
+        Object.defineProperty(tmp, prop, {
+            get (): any {
+                return value;
+            },
+            enumerable : true
+        });
+        return prop in this.target ? (_.extend(this.target, tmp)) : this.target.instance(prop, value);
     }
 
     public enumerate (target: any): PropertyKey[] {

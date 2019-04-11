@@ -5,6 +5,7 @@ import TestCommand from "./TestCommand";
 export default class TestServiceProvider extends ServiceProvider {
 
     boot (): void {
+        console.log('TestServiceProvider boot!');
     }
 
     register (): void {

@@ -16,13 +16,13 @@ export default class Application extends Container {
     private dispatcher: EventListenerInterface = null;
     private commandPrefix: string = 'COMMAND:';
     private router: RouterAdapterInterface = null;
-    private bootComponent: any = null;
-    private rootId: string = '#id';
+    private readonly bootComponent: any = null;
+    private readonly rootId: string = 'id';
 
     /*
     * Application 构造函数
     * */
-    public constructor (root: string = '#id', component: any = null) {
+    public constructor (root: string = 'id', component: any = null) {
         super();
         this.bootComponent = component;
         this.rootId = root;
@@ -38,7 +38,8 @@ export default class Application extends Container {
     * @return any
     * */
     public command (name: string, ...paramters: any): any {
-        let command = this.make(this.commandName(name));
+        let command: CommandInterface = this.make(this.commandName(name));
+        console.log(name, paramters);
         return command.handle.call(this.pageEntry, paramters);
     }
 
@@ -120,7 +121,7 @@ export default class Application extends Container {
         this.mainEntry = new adapter(this, this.rootId, {
             render: (h: Closure) => h(this.bootComponent),
             beforeCreate: () => {
-                this.printSlogon();
+                this.printSlogan();
             },
             created: () => {
                 this.providersContainer.forEach((provider: ServiceProvider) => {
@@ -132,13 +133,13 @@ export default class Application extends Container {
         this.mainEntry.mount();
     }
 
-    private printSlogon () {
-        console.log('%c ' +
+    private printSlogan () {
+        console.log('%c' +
             ' ======================================================== \n' +
             ' ||                                                    || \n' +
-            ' ||           SUPER CONTAINER APPLICATION RUN          || \n' +
+            ' ||         SUPER CONTAINER ELEGANT WAY TO CODE        || \n' +
             ' || Make web front development more elegant and easier || \n' +
-            ' ||                                                    ||\n' +
+            ' ||                                                    || \n' +
             ' ======================================================== ',
             'background:#aaa;color:#bada55');
     }

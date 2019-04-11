@@ -3,7 +3,7 @@
         "outDir": "lib",
         "allowJs": true,
         "target": "es6",
-        "module": "commonJS",
+        "module": "es6",
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
