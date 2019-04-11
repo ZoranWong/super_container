@@ -1,13 +1,23 @@
 import * as _ from 'underscore';
 import Application from "./Application";
+import ApplicationOptions from "./types/ApplicationOptions";
 
 export default class ApplicationProxyHandler {
     private target: Application = null;
+    public proxy: any = null;
+    private static instance: ApplicationProxyHandler =  null;
 
-    constructor (target: Application = null) {
-        this.target = target;
+    private  constructor (target: ApplicationOptions = {rootId: 'id', component: null}) {
+        this.target = new Application(target);
+        this.proxy = new Proxy(this.target, this);
     }
-
+    public static getInstance(target: ApplicationOptions = {rootId: 'id', component: null}): any {
+        if(!ApplicationProxyHandler.instance){
+            let instance = new ApplicationProxyHandler(target);
+            ApplicationProxyHandler.instance = instance;
+        }
+        return ApplicationProxyHandler.instance.proxy;
+    }
     public get (target: any, prop: string, receiver: any) {
         return prop in this.target ? _.property(prop)(this.target) : this.target.make(prop);
     }
@@ -18,7 +28,7 @@ export default class ApplicationProxyHandler {
             get (): any {
                 return value;
             },
-            enumerable : true
+            enumerable: true
         });
         return prop in this.target ? (_.extend(this.target, tmp)) : this.target.instance(prop, value);
     }
