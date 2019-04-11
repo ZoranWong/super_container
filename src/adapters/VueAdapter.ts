@@ -15,12 +15,11 @@ export default class VueAdapter implements AdapterInterface {
 
     public mount (): void {
         let options = {
-            el: this.id,
             router: this.app.get('router')
         };
         options = _.extend(options, this.options);
         this.vue = new Vue(options);
-        this.vue.$mount();
+        this.vue.$mount(this.id);
     }
 
     public beforeCreate (): void {
