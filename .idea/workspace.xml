@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa682d2c-8eb3-4549-8e11-65918dd07c9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/Application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/Application.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/Application.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/events/CustomEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/events/CustomEvent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/events/CustomEvent.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/events/CustomEvent.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test/project/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/project/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test/project/src/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/project/src/main.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/project/src/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -56,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Application.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="25" column="101" selection-start-line="25" selection-start-column="101" selection-end-line="25" selection-end-column="101" />
+            <state relative-caret-position="323">
+              <caret line="40" column="60" lean-forward="true" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
               <folding>
                 <element signature="e#0#67#0" expanded="true" />
               </folding>
@@ -99,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/test/project/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding>
                 <element signature="e#25#52#0" expanded="true" />
               </folding>
@@ -259,36 +247,6 @@
               <item name="super" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="super" type="b2602c69:ProjectViewProjectNode" />
-              <item name="super" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="super" type="b2602c69:ProjectViewProjectNode" />
-              <item name="super" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="super" type="b2602c69:ProjectViewProjectNode" />
-              <item name="super" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="super" type="b2602c69:ProjectViewProjectNode" />
-              <item name="super" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="super" type="b2602c69:ProjectViewProjectNode" />
-              <item name="super" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -375,7 +333,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113479000" />
+    <option name="totallyTimeSpent" value="113560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="73" y="76" width="1780" height="923" extended-state="0" />
@@ -393,7 +351,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49712312" visible="true" weight="0.36462092" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49712312" visible="true" weight="0.13357401" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5028769" side_tool="true" weight="0.1504525" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -694,7 +652,7 @@
     <entry file="file://$PROJECT_DIR$/test/project/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
             <element signature="e#25#52#0" expanded="true" />
           </folding>
@@ -710,8 +668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Application.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="25" column="101" selection-start-line="25" selection-start-column="101" selection-end-line="25" selection-end-column="101" />
+        <state relative-caret-position="323">
+          <caret line="40" column="60" lean-forward="true" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
           <folding>
             <element signature="e#0#67#0" expanded="true" />
           </folding>

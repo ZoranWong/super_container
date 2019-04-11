@@ -38,9 +38,9 @@ export default class Application extends Container {
     * @param parameters
     * @return any
     * */
-    public command (name: string, ...paramters: any): any {
+    public command (name: string, ...parameters: any): any {
         let command: CommandInterface = this.make(this.commandName(name));
-        return command.handle.call(this.pageEntry, paramters);
+        return command.handle.call(this.pageEntry, parameters);
     }
 
     /**
