@@ -1,15 +1,11 @@
-import ServiceProviderInterface from "../src/contracts/ServiceProviderInterface";
+import ServiceProvider from "../src/support/ServiceProvider";
 import Application from "../src/Application";
 import TestCommand from "./TestCommand";
 
-export default class TestServiceProvider implements ServiceProviderInterface {
-    app: Application = null;
-
-    constructor (app: Application) {
-        this.app = app;
-    }
+export default class TestServiceProvider extends ServiceProvider {
 
     boot (): void {
+        console.log('TestServiceProvider boot!');
     }
 
     register (): void {

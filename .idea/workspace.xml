@@ -3,15 +3,61 @@
   <component name="ChangeListManager">
     <list default="true" id="fa682d2c-8eb3-4549-8e11-65918dd07c9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/contracts/AdapterInterface.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/contracts/AdapterInterface.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/Application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/Application.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/Application.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/ApplicationProxyHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/ApplicationProxyHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/ApplicationProxyHandler.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/ApplicationProxyHandler.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/adapters/BrowserEventListenerAdapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/adapters/BrowserEventListenerAdapter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/adapters/BrowserEventListenerAdapter.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/adapters/BrowserEventListenerAdapter.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/adapters/VueAdapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/adapters/VueAdapter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/adapters/VueAdapter.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/adapters/VueAdapter.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/adapters/VueRouterAdapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/adapters/VueRouterAdapter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/adapters/VueRouterAdapter.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/adapters/VueRouterAdapter.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/container/Container.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/container/Container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/container/Container.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/container/Container.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/container/ContextualBindingBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/container/ContextualBindingBuilder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/container/ContextualBindingBuilder.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/container/ContextualBindingBuilder.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/contracts/AdapterInterface.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/contracts/AdapterInterface.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/contracts/CommandInterface.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/contracts/CommandInterface.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/contracts/ConfigInterface.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/contracts/ConfigInterface.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/contracts/Container.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/contracts/Container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/contracts/ContainerInterface.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/contracts/ContainerInterface.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/contracts/ContextualBindingBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/contracts/ContextualBindingBuilder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/contracts/EventListenerInterface.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/contracts/EventListenerInterface.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/contracts/FrameworkInstanceAdapterInterface.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/contracts/FrameworkInstanceAdapterInterface.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/contracts/ServiceProviderInterface.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/contracts/ServiceProviderInterface.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/events/CustomEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/events/CustomEvent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/events/CustomEvent.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/events/CustomEvent.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/events/Dispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/events/Dispatcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/events/Dispatcher.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/events/Dispatcher.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/events/Listener.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/events/Listener.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/events/Listener.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/events/Listener.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/support/ServiceProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/support/ServiceProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/support/ServiceProvider.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/support/ServiceProvider.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/utils/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/utils/helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/utils/helper.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/utils/helper.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test/TestCommand.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/TestCommand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test/TestCommand.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/TestCommand.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test/TestServiceProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/TestServiceProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test/TestServiceProvider.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/TestServiceProvider.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test/application-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/application-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test/application-test.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/application-test.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test/application_proxy_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/application_proxy_test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test/application_proxy_test.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/application_proxy_test.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test/serviceProvider-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/serviceProvider-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test/serviceProvider-test.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/serviceProvider-test.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adapters/VueAdapter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/VueAdapter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/adapters/VueRouterAdapter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/VueRouterAdapter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container/Container.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Container.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contracts/AdapterInterface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/contracts/RouterAdapterInterface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contracts/FrameworkInstanceAdapterInterface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/contracts/FrameworkInstanceAdapterInterface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contracts/RouterAdapterInterface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/contracts/RouterAdapterInterface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/support/ServiceProvider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/support/ServiceProvider.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestServiceProvider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestServiceProvider.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/application-test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/application-test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,42 +71,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/container/Container.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/application-test.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Application.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            <state relative-caret-position="210">
+              <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
               <folding>
                 <element signature="e#0#67#0" expanded="true" />
               </folding>
@@ -69,10 +83,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/project/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="36" />
+              <folding>
+                <element signature="e#25#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ApplicationProxyHandler.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/project/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/adapters/VueAdapter.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="130">
+              <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
               <folding>
                 <element signature="e#0#78#0" expanded="true" />
               </folding>
@@ -80,56 +127,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/adapters/VueRouterAdapter.ts">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/TestServiceProvider.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="319">
+              <caret line="13" column="34" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/contracts/FrameworkInstanceAdapterInterface.ts">
+        <entry file="file://$PROJECT_DIR$/node_modules/vue/types/vue.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="78">
+              <caret line="79" column="119" selection-start-line="79" selection-start-column="119" selection-end-line="79" selection-end-column="119" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/serviceProvider-test.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/contracts/RouterAdapterInterface.ts">
+        <entry file="file://$PROJECT_DIR$/node_modules/vue/types/options.d.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="87">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/application_proxy_test.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -146,8 +166,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getIn</find>
-      <find>build</find>
       <find>make</find>
       <find>this.aliases</find>
       <find>string[]</find>
@@ -176,11 +194,14 @@
       <find>isResolved</find>
       <find>cons</find>
       <find>console</find>
+      <find>vue</find>
+      <find>printSlogon</find>
     </findStrings>
     <replaceStrings>
       <replace>instancesContainer</replace>
       <replace>providersContainer</replace>
       <replace>aliases</replace>
+      <replace>printSlogan</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -189,9 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Container.js" />
-        <option value="$PROJECT_DIR$/src/ProviderContainer.js" />
-        <option value="$PROJECT_DIR$/src/contracts/ServiceProviderInterface.js" />
         <option value="$PROJECT_DIR$/src/adapters/Adapter.js" />
         <option value="$PROJECT_DIR$/src/contracts/AdapterInterface.js" />
         <option value="$PROJECT_DIR$/src/adapters/VueRouterAdapter.js" />
@@ -228,18 +246,21 @@
         <option value="$PROJECT_DIR$/src/utils/helper.ts" />
         <option value="$PROJECT_DIR$/src/contracts/Container.ts" />
         <option value="$PROJECT_DIR$/src/support/ServiceProvider.ts" />
-        <option value="$PROJECT_DIR$/test/TestServiceProvider.ts" />
-        <option value="$PROJECT_DIR$/src/ApplicationProxyHandler.ts" />
         <option value="$PROJECT_DIR$/test/application_proxy_test.ts" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/test/application-test.ts" />
         <option value="$PROJECT_DIR$/src/container/Container.ts" />
-        <option value="$PROJECT_DIR$/src/adapters/VueAdapter.ts" />
         <option value="$PROJECT_DIR$/src/contracts/FrameworkInstanceAdapterInterface.ts" />
-        <option value="$PROJECT_DIR$/src/Application.ts" />
         <option value="$PROJECT_DIR$/src/contracts/RouterAdapterInterface.ts" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/adapters/VueRouterAdapter.ts" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/src/ApplicationProxyHandler.ts" />
+        <option value="$PROJECT_DIR$/test/project/src/main.js" />
+        <option value="$PROJECT_DIR$/test/TestServiceProvider.ts" />
+        <option value="$PROJECT_DIR$/test/project/src/App.vue" />
+        <option value="$PROJECT_DIR$/src/Application.ts" />
+        <option value="$PROJECT_DIR$/lib/src/adapters/VueAdapter.js" />
+        <option value="$PROJECT_DIR$/src/adapters/VueAdapter.ts" />
       </list>
     </option>
   </component>
@@ -250,7 +271,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="105" />
+    <option name="x" value="-162" />
     <option name="y" value="23" />
     <option name="width" value="2343" />
     <option name="height" value="877" />
@@ -267,6 +288,35 @@
             <path>
               <item name="super_container" type="b2602c69:ProjectViewProjectNode" />
               <item name="super_container" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="super_container" type="b2602c69:ProjectViewProjectNode" />
+              <item name="super_container" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="super_container" type="b2602c69:ProjectViewProjectNode" />
+              <item name="super_container" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="adapters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="super_container" type="b2602c69:ProjectViewProjectNode" />
+              <item name="super_container" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="super_container" type="b2602c69:ProjectViewProjectNode" />
+              <item name="super_container" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="super_container" type="b2602c69:ProjectViewProjectNode" />
+              <item name="super_container" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -297,6 +347,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -309,7 +360,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -352,10 +403,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96086000" />
+    <option name="totallyTimeSpent" value="108081000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="105" y="23" width="2343" height="877" extended-state="0" />
+    <frame x="-162" y="23" width="2343" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1627907" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -369,7 +421,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49712312" visible="true" weight="0.25987262" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49712312" visible="true" weight="0.28535032" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5028769" side_tool="true" weight="0.1504525" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -409,54 +461,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testConfig.json" />
-    <entry file="file://$PROJECT_DIR$/src/adapters/BrowserEventListenerAdapter.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProviderContainer.ts" />
-    <entry file="file://$PROJECT_DIR$/src/contracts/ConfigInterface.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/contracts/CommandInterface.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/underscore/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="3808" column="8" selection-start-line="3808" selection-start-column="8" selection-end-line="3808" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/bundle.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.iterable.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="122" column="4" selection-start-line="122" selection-start-column="4" selection-end-line="122" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es2015.proxy.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/contracts/ContextualBindingBuilder.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
@@ -515,15 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestServiceProvider.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/support/ServiceProvider.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -544,16 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ApplicationProxyHandler.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/test/application_proxy_test.js" />
     <entry file="file://$PROJECT_DIR$/dist/src/adapters/BrowserEventListenerAdapter.js" />
     <entry file="file://$PROJECT_DIR$/dist/src/Application.js.map" />
@@ -567,34 +552,8 @@
     <entry file="file://$PROJECT_DIR$/lib/src/contracts/CommandInterface.js" />
     <entry file="file://$PROJECT_DIR$/lib/src/contracts/AdapterInterface.js.map" />
     <entry file="file://$PROJECT_DIR$/lib/src/contracts/AdapterInterface.js" />
-    <entry file="file://$PROJECT_DIR$/lib/src/ApplicationProxyHandler.js" />
     <entry file="file://$PROJECT_DIR$/lib/src/Application.js.map" />
-    <entry file="file://$PROJECT_DIR$/lib/src/Application.js" />
     <entry file="file://$PROJECT_DIR$/lib/src/container/Container.js" />
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/vue/types/vue.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/application_proxy_test.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/application-test.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -614,44 +573,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/contracts/FrameworkInstanceAdapterInterface.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adapters/VueAdapter.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/contracts/RouterAdapterInterface.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Application.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -665,12 +590,159 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/vue/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contracts/FrameworkInstanceAdapterInterface.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/adapters/VueRouterAdapter.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="261">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding>
             <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="52" lean-forward="true" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/Application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1218">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/project/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/application_proxy_test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/ApplicationProxyHandler.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ApplicationProxyHandler.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/TestServiceProvider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/TestCommand.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vue/types/vue.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="79" column="119" selection-start-line="79" selection-start-column="119" selection-end-line="79" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vue/types/options.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/project/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="e#25#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/adapters/VueAdapter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/project/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestServiceProvider.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adapters/VueAdapter.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
           </folding>
         </state>
       </provider>
