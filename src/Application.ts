@@ -6,6 +6,7 @@ import EventListenerInterface from "./contracts/EventListenerInterface";
 import RouterAdapterInterface from "./contracts/RouterAdapterInterface";
 import VueAdapter from './adapters/VueAdapter';
 import {Closure} from "./utils/helper";
+import ApplicationOptions from "./types/ApplicationOptions";
 
 export default class Application extends Container {
     public static version = '0.0.1';
@@ -22,10 +23,10 @@ export default class Application extends Container {
     /*
     * Application 构造函数
     * */
-    public constructor (root: string = 'id', component: any = null) {
+    public constructor ({rootId, component, configs}: ApplicationOptions) {
         super();
         this.bootComponent = component;
-        this.rootId = root;
+        this.rootId = rootId;
         this.providersContainer = new Set<ServiceProvider>();
         this.configs = new Map();
         this.dispatcher = this.configs.get('app.dispatcher');
@@ -39,7 +40,6 @@ export default class Application extends Container {
     * */
     public command (name: string, ...paramters: any): any {
         let command: CommandInterface = this.make(this.commandName(name));
-        console.log(name, paramters);
         return command.handle.call(this.pageEntry, paramters);
     }
 
