@@ -23,7 +23,7 @@ export default class Application extends Container {
     /*
     * Application 构造函数
     * */
-    public constructor ({rootId, component, configs}: ApplicationOptions) {
+    public constructor ({rootId, component, configs}: ApplicationOptions = {rootId: 'id', component: null}) {
         super();
         this.bootComponent = component;
         this.rootId = rootId;

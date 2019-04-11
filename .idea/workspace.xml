@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa682d2c-8eb3-4549-8e11-65918dd07c9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/types/ApplicationOptions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/Application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/Application.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/Application.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/events/CustomEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/events/CustomEvent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/events/CustomEvent.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/events/CustomEvent.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test/project/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/project/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/test/project/src/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/project/src/main.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/events/CustomEvent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/CustomEvent.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/project/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/project/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/project/src/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,22 +28,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/adapters/VueAdapter.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#78#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/events/CustomEvent.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -46,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/events/Dispatcher.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding>
                 <element signature="e#0#73#0" expanded="true" />
               </folding>
@@ -62,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Application.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+            <state relative-caret-position="174">
+              <caret line="25" column="101" selection-start-line="25" selection-start-column="101" selection-end-line="25" selection-end-column="101" />
               <folding>
                 <element signature="e#0#67#0" expanded="true" />
               </folding>
@@ -72,10 +66,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="231">
+                <caret line="7" selection-start-line="7" selection-end-line="7" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/types/ApplicationOptions.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="33">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -92,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/project/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            <state relative-caret-position="231">
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding>
                 <element signature="e#25#52#0" expanded="true" />
               </folding>
@@ -102,19 +108,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/Application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            <state relative-caret-position="330">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,7 +131,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>make</find>
       <find>this.aliases</find>
       <find>string[]</find>
       <find>aliases</find>
@@ -161,6 +160,7 @@
       <find>console</find>
       <find>vue</find>
       <find>printSlogon</find>
+      <find>'</find>
     </findStrings>
     <replaceStrings>
       <replace>instancesContainer</replace>
@@ -175,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/contracts/AdapterInterface.js" />
         <option value="$PROJECT_DIR$/src/adapters/VueRouterAdapter.js" />
         <option value="$PROJECT_DIR$/src/contracts/ConfigInterface.js" />
         <option value="$PROJECT_DIR$/src/contracts/CommandInterface.js" />
@@ -222,9 +221,10 @@
         <option value="$PROJECT_DIR$/src/adapters/VueAdapter.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/events/CustomEvent.ts" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/index.ts" />
-        <option value="$PROJECT_DIR$/src/types/ApplicationOptions.ts" />
         <option value="$PROJECT_DIR$/test/project/src/main.js" />
+        <option value="$PROJECT_DIR$/src/types/ApplicationOptions.ts" />
         <option value="$PROJECT_DIR$/src/Application.ts" />
       </list>
     </option>
@@ -258,6 +258,18 @@
               <item name="super" type="b2602c69:ProjectViewProjectNode" />
               <item name="super" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="super" type="b2602c69:ProjectViewProjectNode" />
+              <item name="super" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="super" type="b2602c69:ProjectViewProjectNode" />
+              <item name="super" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="types" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="super" type="b2602c69:ProjectViewProjectNode" />
@@ -363,7 +375,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112678000" />
+    <option name="totallyTimeSpent" value="113479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="73" y="76" width="1780" height="923" extended-state="0" />
@@ -381,7 +393,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49712312" visible="true" weight="0.377858" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49712312" visible="true" weight="0.36462092" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5028769" side_tool="true" weight="0.1504525" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -421,7 +433,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dist/test/application_proxy_test.js" />
     <entry file="file://$PROJECT_DIR$/dist/src/adapters/BrowserEventListenerAdapter.js" />
     <entry file="file://$PROJECT_DIR$/dist/src/Application.js.map" />
     <entry file="file://$PROJECT_DIR$/dist/src/Application.js" />
@@ -629,7 +640,7 @@
     <entry file="file://$PROJECT_DIR$/src/events/Dispatcher.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding>
             <element signature="e#0#73#0" expanded="true" />
           </folding>
@@ -642,7 +653,7 @@
     <entry file="file://$PROJECT_DIR$/src/events/CustomEvent.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -653,10 +664,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="231">
+            <caret line="7" selection-start-line="7" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        <state relative-caret-position="330">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -669,8 +693,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/project/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        <state relative-caret-position="231">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
             <element signature="e#25#52#0" expanded="true" />
           </folding>
@@ -679,15 +703,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/types/ApplicationOptions.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        <state relative-caret-position="33">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Application.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        <state relative-caret-position="174">
+          <caret line="25" column="101" selection-start-line="25" selection-start-column="101" selection-end-line="25" selection-end-column="101" />
           <folding>
             <element signature="e#0#67#0" expanded="true" />
           </folding>
