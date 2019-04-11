@@ -26,12 +26,7 @@ export default class VueAdapter implements AdapterInterface {
         }
     }
 
-    public mount (): void {
-        let options = {
-            router: this.app.get('router')
-        };
-        this.buildOptions();
-        options = _.extend(options, this.options);
+    private mixins () {
         Vue.mixin({
             methods: {
                 $command: (name, ...parameters: any): any => {
@@ -50,6 +45,15 @@ export default class VueAdapter implements AdapterInterface {
                 }
             })
         });
+    }
+
+    public mount (): void {
+        let options = {
+            router: this.app.get('router')
+        };
+        this.buildOptions();
+        options = _.extend(options, this.options);
+        this.mixins();
         this.vue = new Vue(options);
         this.vue.$mount(this.id);
     }
