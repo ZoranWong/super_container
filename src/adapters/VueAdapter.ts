@@ -16,8 +16,9 @@ export default class VueAdapter implements AdapterInterface {
     }
 
     private buildOptions () {
+        let optionCreated = this.options['created'];
         let created = ((vue: any) => {
-            this.options['created'] || this.options['created']();
+            optionCreated && optionCreated();
             vue.$main = this.app;
             this.created();
         });
