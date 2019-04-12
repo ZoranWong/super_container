@@ -1,17 +1,18 @@
 import * as _ from 'underscore';
 import Application from "./Application";
 import ApplicationOptions from "./types/ApplicationOptions";
+import BrowserEventListenerAdapter from "./adapters/BrowserEventListenerAdapter";
 
 export default class ApplicationProxyHandler {
     private target: Application = null;
     public proxy: any = null;
     private static instance: ApplicationProxyHandler =  null;
 
-    private  constructor (target: ApplicationOptions = {rootId: 'id', component: null}) {
+    private  constructor (target: ApplicationOptions = {rootId: 'id', component: null, adapter: null, dispatcher: BrowserEventListenerAdapter}) {
         this.target = new Application(target);
         this.proxy = new Proxy(this.target, this);
     }
-    public static getInstance(target: ApplicationOptions = {rootId: 'id', component: null}): any {
+    public static getInstance(target: ApplicationOptions = {rootId: 'id', component: null, adapter: null, dispatcher: BrowserEventListenerAdapter}): any {
         if(!ApplicationProxyHandler.instance){
             let instance = new ApplicationProxyHandler(target);
             ApplicationProxyHandler.instance = instance;

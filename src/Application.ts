@@ -4,32 +4,41 @@ import Container from "./container/Container";
 import FrameworkInstanceAdapter from "./contracts/FrameworkInstanceAdapterInterface";
 import EventListenerInterface from "./contracts/EventListenerInterface";
 import RouterAdapterInterface from "./contracts/RouterAdapterInterface";
-import VueAdapter from './adapters/VueAdapter';
+import confData from './configs';
 import {Closure} from "./utils/helper";
 import ApplicationOptions from "./types/ApplicationOptions";
+import BrowserEventListenerAdapter from "./adapters/BrowserEventListenerAdapter";
+import * as _ from 'underscore';
+import Dispatcher from "./events/Dispatcher";
 
 export default class Application extends Container {
     public static version = '0.0.1';
     private providersContainer: Set<ServiceProvider> = null;
     private pageEntry: FrameworkInstanceAdapter = null;
     private mainEntry: FrameworkInstanceAdapter = null;
-    private configs: Map<string, any> = null;
     private dispatcher: EventListenerInterface = null;
     private commandPrefix: string = 'COMMAND:';
     private router: RouterAdapterInterface = null;
     private readonly bootComponent: any = null;
     private readonly rootId: string = 'id';
+    private readonly adapter: any = null;
 
     /*
     * Application 构造函数
     * */
-    public constructor ({rootId, component, configs}: ApplicationOptions = {rootId: 'id', component: null}) {
+    public constructor ({rootId, component, adapter, dispatcher, configs}: ApplicationOptions =
+                            {rootId: 'id', component: null, adapter: null, dispatcher: BrowserEventListenerAdapter}) {
         super();
         this.bootComponent = component;
         this.rootId = rootId;
         this.providersContainer = new Set<ServiceProvider>();
-        this.configs = new Map();
-        this.dispatcher = this.configs.get('app.dispatcher');
+        this.singleton('configs', _.extend(confData, configs));
+        let providers: any[] = this.configs('app.providers');
+        providers.forEach((provider: any) => {
+            this.register(provider);
+        });
+        this.dispatcher = new Dispatcher(dispatcher || BrowserEventListenerAdapter);
+        this.adapter = adapter;
     }
 
     /*
@@ -40,7 +49,7 @@ export default class Application extends Container {
     * */
     public command (name: string, ...parameters: any): any {
         let command: CommandInterface = this.make(this.commandName(name));
-        return command.handle.call(this.pageEntry, parameters);
+        return command.handle.apply(this.pageEntry, parameters);
     }
 
     /**
@@ -76,15 +85,26 @@ export default class Application extends Container {
         this.pageEntry = this.get(this.pageKey(route));
     }
 
+    public configs (key: string = null, defaultVal: any = null): any {
+        let configs: any = this.get('configs');
+        if(key){
+            let keys = key.split('.');
+            for (let k in keys) {
+                configs = configs[keys[k]];
+            }
+        }
+        return configs || defaultVal;
+    }
+
     /*
     * Add route to application
     * @param route
     * @param options
     * */
     public addRoute (route: string, options: any = null) {
-        let multiple = this.configs.get('app.multiple');
+        let multiple = this.configs('app.multiple', false);
         if (multiple) {
-            let adapter = this.configs.get('app.adapter');
+            let adapter = this.adapter;
             let instance = this.buildPage(adapter, options);
             this.singleton(this.pageKey(route), instance);
         }
@@ -117,11 +137,10 @@ export default class Application extends Container {
             if ('register' in provider)
                 provider.register();
         });
-        let adapter = this.configs.get('app.adapter') || VueAdapter;
-        this.mainEntry = new adapter(this, this.rootId, {
+        this.mainEntry = new this.adapter(this, this.rootId, {
             render: (h: Closure) => h(this.bootComponent),
             beforeCreate: () => {
-                this.printSlogan();
+
             },
             created: () => {
                 this.providersContainer.forEach((provider: ServiceProvider) => {
@@ -131,16 +150,5 @@ export default class Application extends Container {
             }
         });
         this.mainEntry.mount();
-    }
-
-    private printSlogan () {
-        console.log('%c' +
-            ' ======================================================== \n' +
-            ' ||                                                    || \n' +
-            ' ||         SUPER CONTAINER ELEGANT WAY TO CODE        || \n' +
-            ' || Make web front development more elegant and easier || \n' +
-            ' ||                                                    || \n' +
-            ' ======================================================== ',
-            'background:#aaa;color:#bada55');
     }
 }
