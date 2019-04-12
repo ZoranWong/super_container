@@ -1,6 +1,6 @@
 {
     "name": "super",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "super framework is base on vue ,let u make web/app easier.",
     "main": "lib/src/index.js",
     "scripts": {
