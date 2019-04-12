@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54f658f7-48ae-406c-aacc-768b50e8a8e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commands/PrintSlogonCommand.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/configs/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/configs/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/providers/AppServiceProvider.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/Application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/Application.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/Application.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/ApplicationProxyHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/ApplicationProxyHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/ApplicationProxyHandler.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/ApplicationProxyHandler.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/adapters/BrowserEventListenerAdapter.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/adapters/BrowserEventListenerAdapter.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/adapters/VueAdapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/adapters/VueAdapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/adapters/VueAdapter.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/adapters/VueAdapter.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/events/Dispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/events/Dispatcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/events/Dispatcher.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/events/Dispatcher.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test/project/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/project/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/test/project/src/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/test/project/src/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApplicationProxyHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationProxyHandler.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adapters/BrowserEventListenerAdapter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/BrowserEventListenerAdapter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adapters/VueAdapter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/VueAdapter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/events/Dispatcher.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/Dispatcher.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/ApplicationOptions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/ApplicationOptions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/test/project/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/project/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/project/src/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/test/project/node_modules/" />
@@ -44,34 +21,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/adapters/VueAdapter.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-468">
-              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            <state relative-caret-position="-1002">
+              <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
               <folding>
                 <element signature="e#0#78#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/adapters/BrowserEventListenerAdapter.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3929">
-              <caret line="143" column="14" lean-forward="true" selection-start-line="143" selection-start-column="14" selection-end-line="143" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#67#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,10 +34,32 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="264">
-                <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              </first_editor>
+              <first_editor />
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/container/ContextualBindingBuilder.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-161">
+              <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#85#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Application.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="140" column="48" lean-forward="true" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#67#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -206,17 +181,6 @@
               <item name="super" type="b2602c69:ProjectViewProjectNode" />
               <item name="super" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="super" type="b2602c69:ProjectViewProjectNode" />
-              <item name="super" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="super" type="b2602c69:ProjectViewProjectNode" />
-              <item name="super" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -252,12 +216,12 @@
       <option name="presentableId" value="Default" />
       <updated>1555035101162</updated>
       <workItem from="1555035102754" duration="102000" />
-      <workItem from="1555035213655" duration="7554000" />
+      <workItem from="1555035213655" duration="8543000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7656000" />
+    <option name="totallyTimeSpent" value="8645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="32" width="1780" height="935" extended-state="0" />
@@ -395,16 +359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/adapters/VueAdapter.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-468">
-          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/project/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -414,10 +368,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Application.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3929">
-          <caret line="143" column="14" lean-forward="true" selection-start-line="143" selection-start-column="14" selection-end-line="143" selection-end-column="14" />
+        <state relative-caret-position="184">
+          <caret line="140" column="48" lean-forward="true" selection-start-line="140" selection-start-column="48" selection-end-line="140" selection-end-column="48" />
           <folding>
             <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adapters/VueAdapter.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1002">
+          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/ContextualBindingBuilder.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -425,9 +399,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="264">
-            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          </first_editor>
+          <first_editor />
           <second_editor />
         </state>
       </provider>
