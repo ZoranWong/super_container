@@ -1,5 +1,5 @@
 {
-    "name": "super",
+    "name": "super-container",
     "version": "0.0.2",
     "description": "super framework is base on vue ,let u make web/app easier.",
     "main": "lib/src/index.js",
@@ -16,6 +16,7 @@
     ],
     "author": "zoran wong",
     "license": "MIT",
+    "email": "skyandsunning@163.com",
     "dependencies": {
         "@types/underscore": "^1.8.13",
         "lodash": "^4.17.11",

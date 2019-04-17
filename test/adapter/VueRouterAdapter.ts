@@ -1,4 +1,4 @@
-import RouterAdapterInterface from "../contracts/RouterAdapterInterface";
+import RouterAdapterInterface from "../../src/contracts/RouterAdapterInterface";
 import VueRouter, {RouteConfig, RouterOptions} from 'vue-router';
 
 export default class VueRouterAdapter implements RouterAdapterInterface {

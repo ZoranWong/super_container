@@ -5,7 +5,6 @@ import FrameworkInstanceAdapter from "./contracts/FrameworkInstanceAdapterInterf
 import EventListenerInterface from "./contracts/EventListenerInterface";
 import RouterAdapterInterface from "./contracts/RouterAdapterInterface";
 import confData from './configs';
-import {Closure} from "./utils/helper";
 import ApplicationOptions from "./types/ApplicationOptions";
 import BrowserEventListenerAdapter from "./adapters/BrowserEventListenerAdapter";
 import * as _ from 'underscore';
@@ -87,7 +86,7 @@ export default class Application extends Container {
 
     public configs (key: string = null, defaultVal: any = null): any {
         let configs: any = this.get('configs');
-        if(key){
+        if (key) {
             let keys = key.split('.');
             for (let k in keys) {
                 configs = configs[keys[k]];
@@ -137,12 +136,11 @@ export default class Application extends Container {
             if ('register' in provider)
                 provider.register();
         });
-        this.mainEntry = new this.adapter(this, this.rootId, {
-            render: (h: Closure) => h(this.bootComponent),
-            beforeCreate: () => {
-
-            },
-            created: () => {
+        this.mainEntry = new this.adapter({
+            application: this,
+            component: this.bootComponent,
+            root: this.rootId,
+            boot: () => {
                 this.providersContainer.forEach((provider: ServiceProvider) => {
                     if ('boot' in provider)
                         provider.boot();

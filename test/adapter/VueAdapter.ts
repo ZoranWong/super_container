@@ -1,7 +1,9 @@
-import AdapterInterface from '../contracts/FrameworkInstanceAdapterInterface';
+import AdapterInterface from '../../src/contracts/FrameworkInstanceAdapterInterface';
 import Vue from "vue";
 import * as _ from 'underscore';
-import Application from "../Application";
+import Application from "../../src/Application";
+import FrameworkAdapterOptions from "../../src/types/FrameworkAdapterOptions";
+import {Closure} from "../../src/utils/helper";
 
 export default class VueAdapter implements AdapterInterface {
     protected vue: Vue = null;
@@ -9,10 +11,16 @@ export default class VueAdapter implements AdapterInterface {
     private readonly app: Application = null;
     private readonly id: string = '#id';
 
-    public constructor (app: Application, id: string = 'id', options: any = null) {
-        this.app = app;
-        this.options = options;
-        this.id = `#${id}`;
+    public constructor ({application, component, root, boot}: FrameworkAdapterOptions
+                            = {root: null, application: null, component: null, boot: null}) {
+        this.app = application;
+        this.options = {
+            render: (h: Closure) => h(component),
+            created: function () {
+                boot();
+            }
+        };
+        this.id = `#${root}`;
     }
 
     private buildOptions () {
